@@ -1,4 +1,4 @@
 partlink-name-std-demo
 ======================
 
-This provides a simple demonstration application to illustrate company name standardization
+This provides a simple demonstration application to illustrate part number standardization

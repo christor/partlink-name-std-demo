@@ -11,16 +11,24 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="jquery/jquery/jquery.js" type="text/javascript"></script>
         <script src="lookup.js" type="text/javascript"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     </head>
     <body>
-        <form>
-            <label for="cn" >Enter company name to standardize</label>
-            <input type="text" name="cn" value="" id="cn"/>
-            <br>
-            <input type="button" name="stdBut" id="btn" onclick="getStandardizedName();" value="submit">
+        <form class="form-inline" role="form" onsubmit="return false;">
+            <div class="form-group">
+            <label class="sr-only" for="cn" >Enter company name to standardize</label>
+            <input class="form-control" type="text" name="cn" value="" id="cn"/>
+            <button class="btn btn-default" type="submit" name="stdBut" id="btn" onclick="getStandardizedName();">Standardize</button>
+            </div>
         </form>
         <div>
-            <label for="results">Result:</label>
             <div id="resultList">
             </div>
         </div>

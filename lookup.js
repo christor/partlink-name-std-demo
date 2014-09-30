@@ -1,7 +1,7 @@
 var xmlHttp = null;
 function getStandardizedName() {
     var compName = document.getElementById("cn").value;
-    var Url = "http://api.xsb.com/company-name-standardizer/api/name/" + compName;
+    var Url = "http://api.xsb.com/company-name-standardizer/api/name/" + encodeURIComponent(compName);
     xmlHttp = new XMLHttpRequest();
     xmlHttp.onreadystatechange = createCallback(xmlHttp, compName);
     xmlHttp.open("GET", Url, true);

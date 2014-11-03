@@ -21,10 +21,29 @@ and open the template in the editor.
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     </head>
     <body>
+        <center><h2>Standardize Company Name</h2></center>
+        <br>
+        <h3>Simple UI to demonstrate a use of XSB's Company Name Standardizer web api</h3>
+        <br>
+        <br>
+        <p>Suppliers do not provide item identifying information, such as manufacturer names and part numbers, in a consistent way.  
+           This lack of standardization between vendors and data sources makes it difficult to find identical parts across the supply 
+           chain, assess pricing, regulatory conformance, and other important procurement related activities.  XSB's 
+           company-name-standardizer web api standardizes manufacturer and company names so identical manufactures can be found.
+        </P>    
+        <p>
+           The company name standardizer web api is used to standardize a company name either individually or as a batch, and 
+           to obtain batch status, errors, and results. Once company names have been standardized they can be more accurately compared.  This web service can also be used to determine if a company name is a match for a cage name. <br>
+        </p>
+        <br>
+           Further documentation can be found <a href="https://partlink.xsb.com/display/DC14/Company+Name+Standardizer+API">here</a>.
+        <br>
+        <br>
+        <br>
         <form class="form-inline" role="form" onsubmit="return false;">
             <div class="form-group">
             <label class="sr-only" for="cn" >Enter company name to standardize</label>
-            <input class="form-control" type="text" name="cn" value="" id="cn"/>
+            <input class="form-control" type="text" name="cn" value="" id="cn" placeholder="name to standardize"/>
             <button class="btn btn-default" type="submit" name="stdBut" id="btn" onclick="getStandardizedName();">Standardize</button>
             </div>
         </form>
